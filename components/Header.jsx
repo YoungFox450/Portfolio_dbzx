@@ -28,7 +28,7 @@ const Header = () => {
                         <SheetTrigger className="cursor-pointer text-[30px] text-white">
                             <CiMenuFries />
                         </SheetTrigger>
-                        <SheetContent className="bg-primary boder-0 flex flex-col justify-between items-center pt-16 pb-20"
+                        <SheetContent className="bg-primary border-0 flex flex-col justify-between items-center pt-16 pb-20"
                             side="left"
                         >
                             <SheetHeader>
