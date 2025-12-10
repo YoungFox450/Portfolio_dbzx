@@ -6,6 +6,9 @@ import Image from "next/image";
 {/*component */ }
 import Stats from "@/components/Stats";
 import Testimonial from "@/components/Testimonial";
+import Info from "@/components/Info";
+import Journey from "@/components/Journey";
+import Skills from "@/components/Skills";
 
 const About = () => {
     return (
@@ -31,16 +34,16 @@ const About = () => {
                             <h2 className="h2 mb-6">
                                 <span className="text-accent">Odrey</span> Keza
                             </h2>
-                            <p>
+                            <p className="max-w-[540px] mb-12">
                                 I am focus on crafting visually stuning, user-friendly web experiences that not only look also function seamlessly, ensuring every detail is carefully designed and executed.
                             </p>
 
                             <div className="flex flex-col items-start gap-16">
                                 <Stats />
                                 <Testimonial />
-                                <div>info</div>
-                                <div>journey</div>
-                                <div>skills</div>
+                                <Info />
+                                <Journey />
+                                <Skills />
                             </div>
                         </div>
                     </ScrollArea>
