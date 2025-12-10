@@ -13,16 +13,16 @@ import { ImQuotesLeft } from "react-icons/im";
 // data
 const testimonial = [
     {
-        message: "Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.",
-        name: "John Doe"
+        message: "J'ai été époustouflé par le service rendu par Nox, je le recommande vivement.",
+        name: "Mark Nangu"
     },
     {
-        message: "Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.",
-        name: "John Doe"
+        message: "J'ai eu à solliciter les services de Nox et je n'ai pas été déçu(e). Merci beaucoup.",
+        name: "Michel Mukeba"
     },
     {
-        message: "Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.",
-        name: "John Doe"
+        message: "L'expérience et le professionnalisme de Nox m'ont mise en confiance. Je recommande ses services.",
+        name: "Naomie Mananga"
     }
 ]
 

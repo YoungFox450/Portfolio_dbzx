@@ -7,7 +7,7 @@ import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 //components
 import Blob from "@/components/Blob";
 import Image from "next/image";
-import avatarImg from "@/public/assets/avatar.png";
+import avatarImg from "@/public/assets/avatar1.png";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
 
@@ -85,7 +85,7 @@ const Home = () => {
             className="absolute -top-16 left-[120px]"
           />
           {/*overlay gradient*/}
-          <div className="w-full h-[164px] absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/40"></div>
+          <div className="w-full h-[164px] absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/9"></div>
         </div>
       </div>
     </motion.section>

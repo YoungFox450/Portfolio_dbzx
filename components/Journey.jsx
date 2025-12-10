@@ -1,18 +1,18 @@
 const Journey = [
     {
         years: "2023 - Present",
-        role: "Web Developer & Designer",
+        role: "Web Developer & Designer Junior",
+        institution: "Freelance"
+    },
+    {
+        years: "2023 - Presant",
+        role: "Ingenieur en Informatique Appliquée",
         institution: "Ist Sup des Tech App"
     },
     {
         years: "2018 - 2023",
-        role: "Web Developer & Designer",
-        institution: "Ist Sup des Tech App"
-    },
-    {
-        years: "2015 - 2018",
-        role: "Web Developer & Designer",
-        institution: "Ist Sup des Tech App"
+        role: "Eléctronicien",
+        institution: "Ist Tech Ind et Pro"
     },
 ];
 

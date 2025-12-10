@@ -12,8 +12,8 @@ const Info = () => {
                 <div className="w-[280px] flex items-start gap-4">
                     <HiOutlineUser className="text-2xl mt-1 text-accent" />
                     <div>
-                        <p className="text-lg">Date of Birth</p>
-                        <p>25 Mais 2000</p>
+                        <p className="text-lg">Date d'annive</p>
+                        <p>25 Mai</p>
                     </div>
                 </div>
                 <div className="w-[280px] flex items-start gap-4">
