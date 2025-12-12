@@ -30,7 +30,7 @@ const Testimonial = () => {
     return (
         <Swiper
             modules={[Autoplay]}
-            loop={true}
+            loop={false}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             className="w-full max-w-[310px] md:max-w-[520px] bg-secondary rounded-lg"
         >
