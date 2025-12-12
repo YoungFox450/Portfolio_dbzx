@@ -29,7 +29,7 @@ const testimonial = [
 const Testimonial = () => {
     return (
         <Swiper
-            modules={[Autoplay]}
+            //modules={[Autoplay]}
             loop={false}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             className="w-full max-w-[310px] md:max-w-[520px] bg-secondary rounded-lg"
