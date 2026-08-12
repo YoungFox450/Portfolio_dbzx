@@ -29,7 +29,42 @@ const Contact = () => {
                 <div className="w-full">
                     <div className="flex flex-col xl:flex-row gap-6">
                         { /* info text */}
-                        <div>info text</div>
+                        <div className="flex-1 xl:w-[600px] flex flex-col gap-12">
+                            <div>
+                                <h2 className="h2 mb-6">
+                                    Contacter <span className="text-accent">Nous</span>
+                                </h2>
+                                <p className="max-w-[460]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto omnis asperiores eaque quis, corporis esse fugiat dolores eius saepe adipisci harum, nihil fugit.
+                                </p>
+                            </div>
+                            <div>
+                                { /* info */}
+                                <div className="flex flex-col gap-8 mb-6 xl:mb-0">
+                                    { /* phone */}
+                                    <div className="flex items-center gap-4 text-lg">
+                                        <span className="text-accent">
+                                            <HiOutlinePhone className="text-2xl" />
+                                        </span>
+                                        <span>+243 987 139 590</span>
+                                    </div>
+                                    { /* email */}
+                                    <div className="flex items-center gap-4 text-lg">
+                                        <span className="text-accent">
+                                            <HiOutlineMail className="text-2xl" />
+                                        </span>
+                                        <span>odreymvula05@gmail.com</span>
+                                    </div>
+                                    { /* localisation */}
+                                    <div className="flex items-center gap-4 text-lg">
+                                        <span className="text-accent">
+                                            <HiOutlineMapPin className="text-2xl" />
+                                        </span>
+                                        <span>42B ACP, Masina Sans-Fil, KINSHASA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         {/* from */}
                         <div className="flex-1">
                             <form className="flex flex-col gap-6 items-start">
@@ -102,7 +137,13 @@ const Contact = () => {
                                     />
                                 </div>
                                 {/* btn */}
-
+                                <button className="btn btn-lg btn-accent">
+                                    <div className="flex items-center gap-3">
+                                        <span className="font-medium">Envoyer</span>
+                                        <HiOutlineArrowLongRight className="text-xl"
+                                        />
+                                    </div>
+                                </button>
                             </form>
                         </div>
                     </div>
