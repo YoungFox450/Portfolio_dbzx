@@ -113,7 +113,7 @@ const projects = [
         image: "/assets/work/thum4.png",
         link: "",
         github: "",
-        tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
+        tech: ["figma", "Pinterest"]
     }
 ];
 
