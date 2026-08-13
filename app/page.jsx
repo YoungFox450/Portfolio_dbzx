@@ -55,7 +55,7 @@ const Home = () => {
               <span className="text-accent">
                 <HiOutlinePhone className="text-xl" />
               </span>
-              <span>+243 971 749 853</span>
+              <span>+243 987 139 590</span>
             </div>
             {/*mail*/}
             <div className="flex items-center gap-4 tel">

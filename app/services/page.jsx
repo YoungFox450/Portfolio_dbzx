@@ -15,7 +15,7 @@ const services = [
     {
         icon: "/assets/services/design.svg",
         href: "",
-        title: "Website Interface Design"
+        title: "Design d'Interface de Site Web"
     },
     {
         icon: "/assets/services/frontend.svg",
@@ -30,12 +30,12 @@ const services = [
     {
         icon: "/assets/services/seo.svg",
         href: "",
-        title: "Search Engine Optimization"
+        title: "Vous cherchez un engenieur SEO"
     },
     {
         icon: "/assets/services/video.svg",
         href: "",
-        title: "Video Production"
+        title: "Production de Video"
     },
 ]
 

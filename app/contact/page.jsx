@@ -35,7 +35,7 @@ const Contact = () => {
                                     Contacter <span className="text-accent">Nous</span>
                                 </h2>
                                 <p className="max-w-[460]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto omnis asperiores eaque quis, corporis esse fugiat dolores eius saepe adipisci harum, nihil fugit.
+                                    Un projet web, un design UI/UX ou une identité visuelle à créer ? Nous vous accompagnons de l'idée originale jusqu'à sa réalisation finale. Contactez-nous dès aujourd'hui !
                                 </p>
                             </div>
                             <div>
@@ -71,7 +71,7 @@ const Contact = () => {
                                 { /* first and last name */}
                                 <div className="flex flex-col xl:flex-row gap-6 w-full">
                                     <div className="w-full">
-                                        <Label htmlfor="name">
+                                        <Label htmlFor="name">
                                             Nom <span className="text-accent">*</span>
                                         </Label>
                                         <Input
@@ -82,7 +82,7 @@ const Contact = () => {
                                         />
                                     </div>
                                     <div className="w-full">
-                                        <Label htmlfor="name">
+                                        <Label htmlFor="name">
                                             Postnom <span className="text-accent">*</span>
                                         </Label>
                                         <Input
@@ -95,7 +95,7 @@ const Contact = () => {
                                 </div>
                                 {/* email */}
                                 <div className="w-full">
-                                    <Label htmlfor="name">
+                                    <Label htmlFor="name">
                                         Email <span className="text-accent">*</span>
                                     </Label>
                                     <Input
@@ -107,7 +107,7 @@ const Contact = () => {
                                 </div>
                                 {/* select */}
                                 <div className="w-full">
-                                    <Label htmlfor="name">
+                                    <Label htmlFor="name">
                                         Je suis interessée par <span className="text-accent">*</span>
                                     </Label>
                                     <Select name="service" required>
@@ -126,7 +126,7 @@ const Contact = () => {
                                 </div>
                                 {/* textarea */}
                                 <div className="w-full">
-                                    <Label htmlfor="name">
+                                    <Label htmlFor="name">
                                         Message <span className="text-accent">*</span>
                                     </Label>
                                     <Textarea

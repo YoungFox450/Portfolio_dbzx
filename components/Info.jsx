@@ -30,14 +30,14 @@ const Info = () => {
                     <HiOutlinePhone className="text-2xl mt-1 text-accent" />
                     <div>
                         <p className="text-lg">Téléphone</p>
-                        <p>+243 971 749 853</p>
+                        <p>+243 987 139 590</p>
                     </div>
                 </div>
                 <div className="w-[280px] flex items-start gap-4">
                     <HiOutlineLocationMarker className="text-2xl mt-1 text-accent" />
                     <div>
                         <p className="text-lg">Localisation</p>
-                        <p>Kinshasa, RD.Congo</p>
+                        <p>Kinshasa, Congo - KINSHASA</p>
                     </div>
                 </div>
             </div>
