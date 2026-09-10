@@ -20,10 +20,10 @@ const About = () => {
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
             }}
-            className="h-screen flex items-center"
+            className="min-h-screen flex items-center py-24 xl:py-0"
         >
             <div className="container mx-auto px-0">
-                <div className="flex flex-col xl:flex-row items-center gap-24 w-full h-[680px]">
+                <div className="flex flex-col xl:flex-row items-center gap-12 xl:gap-24 w-full min-h-[680px]">
                     {/*image et sociale icone*/}
                     <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
                         <Image

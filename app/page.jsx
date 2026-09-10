@@ -19,14 +19,14 @@ const Home = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="h-screen flex items-center"
+      className="min-h-screen flex items-center py-24 xl:py-0"
     >
       {/*pattern*/}
       <Pattern />
-      <div className="flex flex-col xl:flex-row items-center justify-between w-full">
+      <div className="flex flex-col xl:flex-row items-center justify-between gap-10 xl:gap-8 w-full">
         {/*text*/}
-        <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-lesft">
-          <h1 className="h1 flex-1 mb-[28px]">
+        <div className="w-full max-w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left mx-auto xl:mx-0">
+          <h1 className="h1 mb-7">
             Hey! c'est Odrey, <br />
             <TypeAnimation
               sequence={["Web Developer Junior", 2000, "Web Designer", 2000]}
@@ -37,28 +37,28 @@ const Home = () => {
               cursor={false}
             />
           </h1>
-          <p className="max-w-[500px] mb-[44px]">
+          <p className="max-w-[500px] mb-11 text-sm sm:text-base">
             je crée des sites web et des applications web visuellement captivants
             et conviviaux qui transforment vos idées en expériences
             numériques fluides et engageantes.
           </p>
-          <button className="btn btn-lg btn-accent mb-16">
+          <a href="/contact" className="btn btn-lg btn-accent mb-16">
             <div className="flex items-center gap-3">
               <span>Parlons.</span>
               <MdArrowOutward className="text-xl" />
             </div>
-          </button>
+          </a>
           {/*contact info*/}
-          <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0">
+          <div className="flex flex-col md:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0 w-full md:w-auto">
             {/*contact info*/}
-            <div className="flex items-center gap-4 tel">
+            <div className="flex items-center justify-center md:justify-start gap-4 tel">
               <span className="text-accent">
                 <HiOutlinePhone className="text-xl" />
               </span>
               <span>+243 987 139 590</span>
             </div>
             {/*mail*/}
-            <div className="flex items-center gap-4 tel">
+            <div className="flex items-center justify-center md:justify-start gap-4 tel">
               <span className="text-accent">
                 <HiOutlineMail className="text-xl" />
               </span>
@@ -75,17 +75,17 @@ const Home = () => {
         <div className="hidden xl:block flex-1 relative z-20">
           {/*blob*/}
           <Blob containerStyles="w-[560px] h-[560px]" />
-          {/*avtaar img*/}
+          {/*avatar img*/}
           <Image
             src={avatarImg}
-            alt=""
+            alt="Portrait de Odrey"
             width={440}
             height={600}
             quality={100}
-            className="absolute -top-16 left-[120px]"
+            className="absolute -top-16 left-30"
           />
           {/*overlay gradient*/}
-          <div className="w-full h-[164px] absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/9"></div>
+          <div className="w-full h-41 absolute bottom-0 left-0 right-0 bg-linear-to-t from-primary via-primary/90 to-primary/9"></div>
         </div>
       </div>
     </motion.section>

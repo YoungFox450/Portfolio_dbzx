@@ -23,18 +23,18 @@ const Contact = () => {
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
             }}
-            className="h-screen flex items-center py-24 xl:py-0"
+            className="min-h-screen flex items-center py-24 xl:py-0"
         >
-            <div className="container mx-auto w-full h-full flex flex-col items-center xl:justify-center xl:overflow-hidden scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
+            <div className="container mx-auto w-full h-full flex flex-col items-center xl:justify-center xl:overflow-hidden scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-auto xl:overflow-y-visible">
                 <div className="w-full">
-                    <div className="flex flex-col xl:flex-row gap-6">
+                    <div className="flex flex-col xl:flex-row gap-8 xl:gap-6">
                         { /* info text */}
-                        <div className="flex-1 xl:w-[600px] flex flex-col gap-12">
+                        <div className="flex-1 xl:w-[600px] flex flex-col gap-8 xl:gap-12">
                             <div>
                                 <h2 className="h2 mb-6">
                                     Contacter <span className="text-accent">Nous</span>
                                 </h2>
-                                <p className="max-w-[460]">
+                                <p className="max-w-[460px] text-sm sm:text-base">
                                     Un projet web, un design UI/UX ou une identité visuelle à créer ? Nous vous accompagnons de l'idée originale jusqu'à sa réalisation finale. Contactez-nous dès aujourd'hui !
                                 </p>
                             </div>

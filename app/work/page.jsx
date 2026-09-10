@@ -20,7 +20,7 @@ const projects = [
         category: "frontend",
         title: "Page Evenement",
         description: "React + Tailwind landing page",
-        image: "/assets/work/thum1.png",
+        image: "/assets/work/thumb1.png",
         link: "",
         github: "",
         tech: ["React", "TailwindCSS", "Shadcn UI"]
@@ -30,7 +30,7 @@ const projects = [
         category: "frontend",
         title: "Nextfolio Portefolio",
         description: "Next.js portfolio site",
-        image: "/assets/work/thum2.png",
+        image: "/assets/work/thumb2.png",
         link: "",
         github: "",
         tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
@@ -40,7 +40,7 @@ const projects = [
         category: "frontend",
         title: "Nextfolio Portefolio",
         description: "Next.js portfolio page",
-        image: "/assets/work/thum3.png",
+        image: "/assets/work/thumb3.png",
         link: "",
         github: "",
         tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
@@ -50,7 +50,7 @@ const projects = [
         category: "frontend",
         title: "Nextfolio Portefolio",
         description: "Next.js portfolio page",
-        image: "/assets/work/thum4.png",
+        image: "/assets/work/thumb4.png",
         link: "",
         github: "",
         tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
@@ -60,7 +60,7 @@ const projects = [
         category: "frontend",
         title: "Page Evenement",
         description: "React + Tailwind landing page",
-        image: "/assets/work/thum5.png",
+        image: "/assets/work/thumb5.png",
         link: "",
         github: "",
         tech: ["React", "TailwindCSS", "Shadcn UI"]
@@ -70,7 +70,7 @@ const projects = [
         category: "frontend",
         title: "Nextfolio Portefolio",
         description: "Next.js portfolio site",
-        image: "/assets/work/thum.png",
+        image: "/assets/work/thumb1.png",
         link: "",
         github: "",
         tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
@@ -80,7 +80,7 @@ const projects = [
         category: "frontend",
         title: "Nextfolio Portefolio",
         description: "Next.js portfolio page",
-        image: "/assets/work/thum3.png",
+        image: "/assets/work/thumb3.png",
         link: "",
         github: "",
         tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
@@ -90,7 +90,7 @@ const projects = [
         category: "frontend",
         title: "Nextfolio Portefolio",
         description: "Next.js portfolio page",
-        image: "/assets/work/thum4.png",
+        image: "/assets/work/thumb4.png",
         link: "",
         github: "",
         tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
@@ -100,7 +100,7 @@ const projects = [
         category: "frontend",
         title: "Nextfolio Portefolio",
         description: "Next.js portfolio page",
-        image: "/assets/work/thum3.png",
+        image: "/assets/work/thumb3.png",
         link: "",
         github: "",
         tech: ["Next.js", "TailwindCSS", "Shadcn UI"]
@@ -110,7 +110,7 @@ const projects = [
         category: "design",
         title: "Designe portfolio figma",
         description: "Design de portfolio avec figma",
-        image: "/assets/work/thum4.png",
+        image: "/assets/work/thumb4.png",
         link: "",
         github: "",
         tech: ["figma", "Pinterest"]
@@ -148,7 +148,7 @@ const Work = () => {
                     </TabsList>
 
                     {/* tabs content */}
-                    <div className="h-[400px] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
+                    <div className="h-[440px] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-auto xl:overflow-y-visible">
                         {categories.map((category) => {
                             return (
                                 <TabsContent key={category} value={category}>
@@ -156,6 +156,12 @@ const Work = () => {
                                         modules={[Pagination]}
                                         pagination={{ clickable: true, dynamicBullets: true }}
                                         className="h-max xl:h-[460px]"
+                                        spaceBetween={20}
+                                        slidesPerView={1}
+                                        breakpoints={{
+                                            640: { slidesPerView: 1.1 },
+                                            1024: { slidesPerView: 1 },
+                                        }}
                                     >
                                         {projects
                                             .filter((project) => project.category === category)
@@ -182,25 +188,35 @@ const Work = () => {
                                                                 </div>
                                                                 {/* btns */}
                                                                 <div className="flex flex-col sm:flex-row gap-2 items-start">
-                                                                    <Link href={project.link}>
-                                                                        <button className="btn btn-sm btn-accent flex gap-2">
+                                                                    {project.link ? (
+                                                                        <Link href={project.link} className="btn btn-sm btn-accent flex gap-2">
                                                                             <MdArrowOutward className="text-xl" />
                                                                             <span>Voir le projet</span>
-                                                                        </button>
-                                                                    </Link>
-                                                                    <Link href={project.github}>
-                                                                        <button className="btn btn-sm btn-white flex gap-2">
+                                                                        </Link>
+                                                                    ) : (
+                                                                        <span className="btn btn-sm btn-accent flex gap-2 opacity-60 cursor-not-allowed">
+                                                                            <MdArrowOutward className="text-xl" />
+                                                                            <span>Voir le projet</span>
+                                                                        </span>
+                                                                    )}
+                                                                    {project.github ? (
+                                                                        <Link href={project.github} className="btn btn-sm btn-white flex gap-2">
                                                                             <FaGithub className="text-xl" />
                                                                             <span>Depo Github</span>
-                                                                        </button>
-                                                                    </Link>
+                                                                        </Link>
+                                                                    ) : (
+                                                                        <span className="btn btn-sm btn-white flex gap-2 opacity-60 cursor-not-allowed">
+                                                                            <FaGithub className="text-xl" />
+                                                                            <span>Depo Github</span>
+                                                                        </span>
+                                                                    )}
                                                                 </div>
                                                             </div>
                                                             {/* project img */}
                                                             <div className="w-full h-[200px] md:h-[300px] xl:h-[400px] relative bg-pink-50/10 order-1 xl:order-none rounded-lg overflow-hidden">
                                                                 <Image
                                                                     src={project.image}
-                                                                    alt={project.image}
+                                                                    alt={project.title}
                                                                     fill
                                                                     className="object-cover"
                                                                 />

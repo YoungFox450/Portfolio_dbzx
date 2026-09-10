@@ -47,8 +47,8 @@ const Services = () => {
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
             }}
-            className="h-screen flex items-center">
-            <div className="container mx-auto w-full flex flex-col gap-16">
+            className="min-h-screen flex items-center py-24 xl:py-0">
+            <div className="container mx-auto w-full flex flex-col gap-10 md:gap-14 xl:gap-16">
                 {/* text */}
                 <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8">
                     {/* headline */}
@@ -56,19 +56,19 @@ const Services = () => {
                         Des <span className="text-accent">Web Slutions</span> Personnalisée pour Booster Votre Business
                     </h2>
                     {/* btn */}
-                    <button className="btn btn-lg btn-accent flex gap-2">Tous les services<MdArrowRightAlt className="text-2xl" /></button>
+                    <a href="/contact" className="btn btn-lg btn-accent flex gap-2">Tous les services<MdArrowRightAlt className="text-2xl" /></a>
                 </div>
                 {/* slider */}
                 <Swiper
-                    spaceBetween={30}
-                    slidesPerView={1}
+                    spaceBetween={20}
+                    slidesPerView={1.1}
                     breakpoints={{
                         640: { slidesPerView: 2 },
                         1024: { slidesPerView: 3 },
                     }}
                     modules={[Pagination]}
                     pagination={{ clickable: true, dynamicBullets: true }}
-                    className="h-[320px]"
+                    className="h-[340px] sm:h-[320px]"
                 >
                     {services.map((item, index) => {
                         return (

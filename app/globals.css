@@ -24,6 +24,21 @@
 
 body {
   @apply font-primary bg-primary text-white leading-relaxed;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .h1 {
